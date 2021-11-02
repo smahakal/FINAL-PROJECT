@@ -7,28 +7,47 @@
     <title>Diabetes Result</title>
 </head>
 
-<body>
-
-    <div class="container">
+<body background="E:/diabetic.jfif" style="background-repeat: no-repeat;background-size: 100%">
+    <center>
+        <div class="container">
         <form action="{{url_for('predict')}}" method="POST">
-            <h2 class='container-heading'><span class="heading_font">DIABETIC Prediction</span>
-            </h2>
-        <br><br><br>
+            <h1 class='container-heading'><span class="heading_font">
+            <font size="7"
+                 face="verdana"
+               color="black">DIABETES PREDICTION</font></span>
+            </h1>
+        <br><br>
             <div class="results">
                 {% if prediction==1 %}
-				    <h1><span class='danger'>Oops! <br><br>You have diabetics.</span></h1>
+				    <h1><span class='danger'><font size="8"
+          face="verdana"
+          color="red">
+           Oops! 
+        </font><br><br><font size="8"
+          face="verdana"
+          color="red">
+            You have diabetics.
+        </font></span></h1>
                 {% elif prediction==0 %}
-				    <h1><span class='safe'>Congratulation!<br><br>You DON'T have diabetics.</span></h1>
+				    <h1><span class='safe'><font size="8"
+          face="verdana"
+          color="green">
+            Congratulation!
+        </font><br><br><font size="8"
+          face="verdana"
+          color="green">
+           You DON'T have diabetics.
+        </font></span></h1>
 			    {% endif %}
             </div>
-		
-        </form>
 
-    </div>
+        </form>
+       </div>
     <div>
+
             <br><br> <br><br><br><br><br><br><br><br>
 
-            <p class='footer-description'>©SOUMYA RANJAN SWAIN</p>
+            <p class='footer-description'><b>©SOUMYA RANJAN SWAIN</b></p>
 
     </div>
 
@@ -37,6 +56,5 @@
 
 
 
-
+   </center>
 </body>
-
