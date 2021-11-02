@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <title>DIABETEC PREDICTION</title>
 </head>
-<body>
+<body background="E:/diabetes.jfif" style="background-repeat: no-repeat;background-size: 100%"><center>
     <div class="container">
         
-        <h2 class='container-heading' ><span class="heading_font">DIABETECS PREDICTION</span>
+        <h2 class='container-heading' ><span class="heading_font"><font size="7"
+          face="verdana"
+          color="green">
+            DIABETES PREDICTION
+        </font></span>
             
         </h2>
     </div>
@@ -18,50 +22,57 @@
         <form action="{{ url_for ('predict') }}" method="POST">
             <br>
 
-            <h3>PREGNANCIES</h3>
-            <input id="first" name="PREGNANCIES" placeholder="enter number of pregnancies" required="required">
-            <br>
-
-            <h3>GLUCOSE</h3>
-            <input id="second" name="GLUCOSE" placeholder="enter gluose level" required="required">
-            <br>
-
-            <h3>BLOODPRESSURE</h3>
-            <input id="third" name="BLOODPRESSURE" placeholder="enter blood pressure" required="required">
-            <br>
+            <table>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>PREGNANCIES</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="PREGNANCIES" placeholder="enter number of pregnancies" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
             
-            <h3>SKINTHICKNESS</h3>
-            <input id="fourth" name="SKINTHICKNESS" placeholder="enter skin thickness" required="required">
-            <br>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>GLUCOSE</b></h3></td>
+                    <td width="200px" height="80px"><input id="second" name="GLUCOSE" placeholder="enter gluose level" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>BLOODPRESSURE</b></h3></td>
+                    <td width="200px" height="80px"><input id="third" name="BLOODPRESSURE" placeholder="enter blood pressure" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>SKINTHICKNESS</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="SKINTHICKNESS" placeholder="enter skinthickness" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
             
-            <h3>INSULIN</h3>
-            <input id="fifth" name="INSULIN" placeholder="enter insulin" required="required">
-            <br>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>INSULIN</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="INSULIN" placeholder="enter insulin" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
             
-            <h3>BMI</h3>
-            <input id="fifth" name="BMI" placeholder="enter BMI " required="required">
-            <br>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>BMI</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="BMI" placeholder="enter BMI" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
             
-            <h3>DIABETES</h3>
-            <input id="fifth" name="DIABETES" placeholder="enter diabetic pedigree value" required="required">
-            <br>
+                <tr>
+                    <td width="200px" height="80px"><h3><b>DIABETES</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="DIABETES" placeholder="enter diabetic pedigree value" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
             
-            <h3>AGE</h3>
-            <input id="fifth" name="AGE" placeholder="RANGE BETWEEN 20 TO 100" required="required">
+                <tr>
+                    <td width="200px" height="80px"><h3><b>AGE</b></h3></td>
+                    <td width="200px" height="80px"><input id="first" name="AGE" placeholder="RANGE BETWEEN 20 TO 100" style="width: 150px;height: 30px;border-radius: 10px" required="required"></td>
+                </tr>
+                
+            </table>
+            <br><br>
+            <input type="submit" name="sub" value="Submit" style="width: 90px;height: 40px;border-radius: 5px">
             <br>
-            
-            <br>
-            <br>
-            <button id="sub" type="submit ">Submit</button>
             <br>
             <br>
             <br>
-            <br>
-            <p class='footer-description'>@SOUMYA RANJAN SWAIN</p>
+            <p class='footer-description'><b>@SOUMYA RANJAN SWAIN</b></p>
 
         </form>
     </div>
-    
+    </center>
 
 </body>
 </html>
